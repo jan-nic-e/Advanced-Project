@@ -11,46 +11,45 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "o6ScdC0gQIrob-U-9",
-      });
+   (function () {
+      emailjs.init(publicKey: "o6ScdC0gQIrob-U-9");
    })();
 </script>
 </head>
+
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img id="personal-logo" src="Assets/logo.svg" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
-                    nav__hover-effect
-                    nav__hover-effect--black
+                    link__hover-effect
+                    link__hover-effect--black
                     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
                     nav__link--anchor
-                    nav__hover-effect
-                    nav__hover-effect--black
+                    link__hover-effect
+                    link__hover-effect--black
                     ">Projects</a>
                 </li>
                 <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
-                    nav__hover-effect
-                    nav__hover-effect--black
+                    link__hover-effect
+                    link__hover-effect--black
                     ">Contact</a>
                 </li>
                 <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
-                    nav__hover-effect
-                    nav__hover-effect--black
+                    link__hover-effect
+                    link__hover-effect--black
                     "><i class="fa-solid fa-circle-half-stroke"></i></a>
                 </li>
             </ul>
@@ -75,9 +74,11 @@
                 </a>
             </div>
         </header>
+        <a href="#">
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -142,6 +143,15 @@
                 </div>
             </div>
         </div>
+        <img src="Assets/semi circle.svg" class="shape shape--0">
+        <img src="Assets/circle.svg" class="shape shape--1">
+        <img src="Assets/squiggly.svg" class="shape shape--2">
+        <img src="Assets/circle.svg" class="shape shape--3">
+        <img src="Assets/triangle.svg" class="shape shape--4">
+        <img src="Assets/circle.svg" class="shape shape--5">
+        <img src="Assets/squiggly.svg" class="shape shape--6">
+        <img src="Assets/circle.svg" class="shape shape--7">
+        <img src="Assets/semi circle.svg" class="shape shape--8">
     </section>
     <section id="projects">
         <div class="container">
@@ -215,22 +225,22 @@
             <div class="footer__social--list">
                 <a href="#" class="
                 footer__social--link
-                link__hover-effec
+                link__hover-effect
                 link__hover-effect--white
                 ">Github</a>
-                <a href="#" class="
+                <a href="#" target="_blank" class="
                 footer__social--link
-                link__hover-effec
+                link__hover-effect
                 link__hover-effect--white
                 ">LinkedIn</a>
-                <a href="#" class="
+                <a href="#" onClick="toggleModal()" class="
                 footer__social--link
-                link__hover-effec
+                link__hover-effect
                 link__hover-effect--white
                 ">Contact</a>
-                <a href="#" class="
+                <a href="Assets/David Bragg Resume.pdf" target="_blank" class="
                 footer__social--link
-                link__hover-effec
+                link__hover-effect
                 link__hover-effect--white
                 ">Resume</a>
             </div>
